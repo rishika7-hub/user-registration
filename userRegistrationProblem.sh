@@ -34,3 +34,12 @@ then
 else
         echo "Please enter a valid email address"
 fi
+
+read -p "Enter the password:" pass
+if [[ "$pass" =~ ^([a-zA-Z]){8,}$ ]]
+then
+        echo "Password is valid"
+else
+        echo "Password is invalid"
+fi
+
