@@ -50,3 +50,11 @@ then
 else
         echo "invalid"
 fi
+
+read -p "Enter password:" password
+if [[ "$password" =~ ([0-9]) ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
