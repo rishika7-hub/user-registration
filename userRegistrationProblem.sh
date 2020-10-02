@@ -19,6 +19,14 @@ else
 echo "Invalid last name"
 fi
 
+read -p "Enter mobile format:" num
+if [[ "$num" =~ ([0-9]*\s[0-9]*)* ]]
+then
+        echo "Valid mobile format"
+else
+        echo "Invalid mobile format"
+fi
+
 read -p "Enter Email ID: " email
 if [[ "$email" =~ [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z] ]]
 then
