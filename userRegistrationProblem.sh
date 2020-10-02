@@ -43,3 +43,10 @@ else
         echo "Password is invalid"
 fi
 
+read -p "Enter password:" pass
+if [[ "$pass" =~ ([A-Z]) ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
