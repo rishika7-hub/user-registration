@@ -58,3 +58,12 @@ then
 else
         echo "invalid"
 fi
+
+read -p "Enter password:" password
+if [[ "$password" =~ ([#?!@$^&*-_]){1,} ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
+
